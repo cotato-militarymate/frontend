@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Board from './pages/Board';
 import LetterManage from './pages/LetterManage';
 import Mypage from './pages/Mypage';
 import UserInfo from './pages/UserInfo';
@@ -25,14 +24,14 @@ const router = createBrowserRouter([
       {path: '/signup', element: <Signup/>},
       {path: '/userinfo', element: <UserInfo/>},
       {path: '/usersurvey', element: <UserSurvey/>},
-      {path: '/board', element: <Board/>},
+      { path: "/main", element: <Main /> },
+      { path: "/board", element: <Writing /> },
       {path: '/lettermanage', element: <LetterManage/>},
       {path: '/mypage', element: <Mypage/>},
     ]
   }
 ])
-      { path: "/main", element: <Main /> },
-      { path: "/board", element: <Writing /> },
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
