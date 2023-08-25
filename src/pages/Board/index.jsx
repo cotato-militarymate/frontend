@@ -1,7 +1,19 @@
 import React, { useState } from "react";
-import { styled } from "styled-components";
-import Posts from "./Posts"; // Posts 컴포넌트 경로를 적절하게 수정해주세요
-import Writing from "./Writing"; // Writing 컴포넌트 경로를 적절하게 수정해주세요
+import styled from "styled-components"; // Corrected import
+import Posts from "./Posts";
+import Writing from "./Writing";
+
+const Button = styled.button`
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  background-color: #3d523f;
+  margin-top: 20px;
+  margin-left: 1170px;
+  margin-bottom: -200px;
+  border-radius: 8px;
+`;
 
 const App = () => {
   const [selected, setSelected] = useState("board");
@@ -12,12 +24,13 @@ const App = () => {
 
   return (
     <div>
+      <Button type="button" onClick={() => setSelect("writing")}>
+        게시글 작성하기
+      </Button>
       {selected === "board" && <Posts setSelect={setSelect} />}
       {selected === "writing" && <Writing setSelect={setSelect} />}
     </div>
   );
 };
-
-// 스타일 등의 코드는 그대로 사용
 
 export default App;

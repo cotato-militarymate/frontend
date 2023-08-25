@@ -1,0 +1,15 @@
+{
+  "mypage": [
+    {
+      "id": 1,
+      "nickname": "그린",
+      "email": "abcedfg@nvaer.com",
+      "address": "대구광역시 중구",
+      "date": "2023.12",
+      "region": "경기도 연천",
+      "mbti": "esfp",
+      "smoking": "비흡연",
+      "ability": "중"
+    }
+  ]
+}
