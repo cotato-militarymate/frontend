@@ -26,7 +26,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 12rem;
+  margin-top: 10rem;
 `
 
 const LoginForm = styled.form`
