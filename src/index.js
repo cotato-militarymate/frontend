@@ -10,6 +10,8 @@ import Signup from './pages/Signup';
 import Board from './pages/Board';
 import LetterManage from './pages/LetterManage';
 import Mypage from './pages/Mypage';
+import UserInfo from './pages/UserInfo';
+import UserSurvey from './pages/UserSurvey';
 
 
 const router = createBrowserRouter([
@@ -20,6 +22,8 @@ const router = createBrowserRouter([
       {index: true, element: <Landing/>},
       {path: '/login', element: <Login/>},
       {path: '/signup', element: <Signup/>},
+      {path: '/userinfo', element: <UserInfo/>},
+      {path: '/usersurvey', element: <UserSurvey/>},
       {path: '/board', element: <Board/>},
       {path: '/lettermanage', element: <LetterManage/>},
       {path: '/mypage', element: <Mypage/>},
