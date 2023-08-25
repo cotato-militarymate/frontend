@@ -12,12 +12,13 @@ import LetterManage from './pages/LetterManage';
 import Mypage from './pages/Mypage';
 import UserInfo from './pages/UserInfo';
 import UserSurvey from './pages/UserSurvey';
-
+import Writing from "./pages/Board/index";
+import Main from "./pages/Main/Main";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App/>,
+    path: "/",
+    element: <App />,
     children: [
       {index: true, element: <Landing/>},
       {path: '/login', element: <Login/>},
@@ -30,8 +31,10 @@ const router = createBrowserRouter([
     ]
   }
 ])
+      { path: "/main", element: <Main /> },
+      { path: "/board", element: <Writing /> },
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

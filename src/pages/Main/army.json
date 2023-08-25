@@ -1,0 +1,36 @@
+{
+  "army": [
+    {
+      "id": 1,
+      "title": "굳거니",
+      "age": "23세",
+      "address": "서울 종로구",
+      "date": "2023.12",
+      "imageUrl": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJXjR0%2FbtsshxpaMMz%2FZuMtGMxhFkRluy6uycWED1%2Fimg.png"
+    },
+    {
+      "id": 2,
+      "title": "군대싫어",
+      "age": "25세",
+      "address": "경기 수원시",
+      "date": "2024.01",
+      "imageUrl": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdPkOHv%2FbtssaRpoL6v%2FSWvqTJc52kxO4kTpthfHeK%2Fimg.png"
+    },
+    {
+      "id": 3,
+      "title": "호구기",
+      "age": "20세",
+      "address": "대전광역시",
+      "date": "2024.02",
+      "imageUrl": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb3uqQq%2Fbtssf3oOhPk%2FLwXXyTu2pmr6S16RCxyxVK%2Fimg.png"
+    },
+    {
+      "id": 4,
+      "title": "애국자",
+      "age": "21세",
+      "address": "서울 마포구",
+      "date": "2024.07",
+      "imageUrl": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FJXjR0%2FbtsshxpaMMz%2FZuMtGMxhFkRluy6uycWED1%2Fimg.png"
+    }
+  ]
+}
