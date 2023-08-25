@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
-
 import styled from 'styled-components';
+import NavbarBg from '../../assets/imgs/navbar_bg.png'
 
 export default function Navbar() {
   return (
@@ -39,10 +39,10 @@ const Header = styled.div`
   padding: 0 10rem;
   align-items: center;
   box-shadow: 0px 4px 16px 0px rgba(196, 196, 196, 0.25);
-
+  background-image: url(${NavbarBg});
   a, p{
     text-decoration: none;
-    color: var(--font-gray);
+    color: white;
     font-size: 1.125rem;
   }
 
@@ -60,17 +60,12 @@ const Menu = styled.nav`
     letter-spacing: 0.02rem;
   }
 
-  a.active{
-    font-weight: 600;
-    border-bottom: 4px solid var(--main-color);
-    color: black;
-  }
 `
 const LoginBox = styled.div`
   display: flex;
   gap: 1.5rem;
   align-items: center;
   a{
-    color: #686868;
+    color: white;
   }
 `
