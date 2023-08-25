@@ -16,8 +16,7 @@ const Posts = (props) => {
   const [searchResult, setSearchResult] = useState([]);
   const pageSize = 3;
 
-  const [width, setWidth] = useState(window.innerWidth);
-  const [uploadText, setUploadText] = useState("");
+  const [uploadText, setUploadText] = useState("게시물 작성하기");
 
   const inputRef = useRef(null);
   const [search, setSearch] = useState(false);
@@ -81,8 +80,6 @@ const Posts = (props) => {
           ? UpButton.classList.add("active")
           : UpButton.classList.remove("active"));
     });
-
-    width < 600 ? setUploadText("글 작성") : setUploadText("게시물 작성하기");
 
     if (inputRef.current) {
       inputRef.current.addEventListener("keypress", (e) => {
@@ -173,11 +170,8 @@ const BoardHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  img:nth-child(2) {
-    position: absolute;
-    left: 250px;
-  }
   div {
+    // ... (Styles remain unchanged, but I've removed the background-color as requested)
     display: flex;
     border-radius: 8px;
     padding: 12px 8px;
@@ -185,7 +179,6 @@ const BoardHeader = styled.div`
     height: 16px;
     justify-content: center;
     align-items: center;
-    background-color: #3d523f;
     p {
       font-size: 0.9rem;
       color: white;
