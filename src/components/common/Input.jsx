@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export default function Input({label, name, placeholder, value, handleOnChange}) {
   const InputStyle = {
-    padding: '0.6rem 0.8rem',
+    padding: '0.8rem 1rem',
     fontSize:'1rem',
     color: 'black',
     border: '1px solid #9FA6B2',
