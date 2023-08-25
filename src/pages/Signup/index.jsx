@@ -2,10 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Input from '../../components/common/Input'
 import StyledButton from '../../components/common/StyledButton'
+import { useNavigate } from 'react-router-dom'
 
 export default function Signup() {
+  const navigate = useNavigate()
+
   const handleOnClick = () => {
+    navigate('/userinfo')
+
     // 회원가입 api 연동
+
   }
 
   return (
