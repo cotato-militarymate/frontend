@@ -16,7 +16,7 @@ export default function Signup() {
 
   return (
     <ContentWrapper>
-      <div>Logo</div>
+      <div>회원가입</div>
       <SignupForm>
         <Input label={"아이디"} name={'user_id'} placeholder={'아이디를 입력하세요'}/>
         <Input label={"비밀번호"} name={'user_pwd'} placeholder={'비밀번호를 입력하세요'}/>
@@ -34,6 +34,11 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
+
+  div{
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
 `
 
 const SignupForm = styled.form`

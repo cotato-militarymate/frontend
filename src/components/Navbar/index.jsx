@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <Header>
       <Link to='/'>
-        <div>LOGO</div>
+        <Logo>GUNMATE</Logo>
       </Link>
       <Menu>
         <NavLink to='/board'>
@@ -49,6 +49,12 @@ const Header = styled.div`
   a:nth-child(1).active {
     backgroun-color: red;
   }
+`
+
+const Logo = styled.div`
+  font-size: 1.75rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
 `
 
 const Menu = styled.nav`
